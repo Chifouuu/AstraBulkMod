@@ -1,7 +1,7 @@
 content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="net.minecraft.item.Item"><rhs name\="net.minecraft.item.Item"/><rhs name\="com.chifou.bulkmod.specialsitems.ExplosionStick"/></lhs><lhs name\="java.lang.Iterable"><rhs name\="net.minecraft.util.ChatComponentText"/></lhs><lhs name\="net.minecraft.util.IChatComponent"><rhs name\="net.minecraft.util.ChatComponentText"/></lhs><lhs name\="net.minecraft.entity.Entity"><rhs name\="net.minecraft.entity.item.EntityBoat"/></lhs><lhs name\="net.minecraft.entity.item.EntityBoat"><rhs name\="net.minecraft.entity.item.EntityBoat"/></lhs></history>
-content_assist_number_of_computers=14
+content_assist_number_of_computers=15
 eclipse.preferences.version=1
-org.eclipse.jdt.ui.formatterprofiles.version=22
+org.eclipse.jdt.ui.formatterprofiles.version=23
 spelling_locale_initialized=true
 typefilter_migrated_2=true
 useAnnotationsPrefPage=true
