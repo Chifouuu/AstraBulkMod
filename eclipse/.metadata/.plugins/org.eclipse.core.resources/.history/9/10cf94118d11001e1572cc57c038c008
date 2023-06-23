@@ -1,0 +1,103 @@
+package com.chifou.bulkmod;
+
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
+import net.minecraft.item.Item;
+
+import com.chifou.bulkmod.proxys.CommonProxy;
+import com.chifou.bulkmod.registries.ItemsRegistries;
+
+import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.Mod.EventHandler;
+import cpw.mods.fml.common.SidedProxy;
+import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.event.FMLPostInitializationEvent;
+import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+
+@Mod(modid = BulkMod.MODID, version = BulkMod.VERSION)
+public class BulkMod
+{
+	
+	
+    public static final String MODID = "bulkmod";
+    public static final String VERSION = "1.0";
+    public static final String CLIENT_PROXY = "com.chifou.bulkmod.proxys.ClientProxy";
+    public static final String COMMON_PROXY = "com.chifou.bulkmod.proxys.CommonProxy";
+    public static CreativeTabs bulktab = new CreativeTabs("BulkTab") {
+		
+		@Override
+		public Item getTabIconItem() {
+			// TODO Auto-generated method stub
+			return Items.apple;
+		}
+	};
+    
+    @SidedProxy(clientSide = CLIENT_PROXY, serverSide = COMMON_PROXY)
+    public static CommonProxy proxy;
+    
+    
+    
+    @EventHandler
+    public void preinit(FMLPreInitializationEvent event) {
+    	ItemsRegistries.init();
+    	ItemsRegistries.register();
+    }
+    
+   
+	
+    
+    @EventHandler
+    public void init(FMLInitializationEvent event)
+    {
+    }
+    
+    @EventHandler
+    public void postInit(FMLPostInitializationEvent event) {
+    	
+    }
+    
+    @SubscribeEvent
+        public static void renderGameOverlayPre(RenderGameOverlayEvent.Pre event)
+        {
+            if(event.getType().equals(ElementType.HEALTH))
+                event.setCanceled(true);
+        }
+ 
+        @SubscribeEvent
+        public static void renderGameOverlayPost(RenderGameOverlayEvent.Post event)
+        {
+            if(event.getType().equals(ElementType.ALL))
+            {
+                GL11.glColor4f(1, 1, 1, 1);
+                GL11.glEnable(GL11.GL_BLEND);
+                GL11.glBlendFunc(770, 771);
+                int width = event.getResolution().getScaledWidth();
+ 
+                if(!MC.player.capabilities.disableDamage)
+                    drawHealth(event.getResolution(), MC.player);
+ 
+                String s = MC.getConnection().getPlayerInfoMap().size() + "/" + MC.getConnection().currentServerMaxPlayers + " joueurs";
+                Gui.drawRect(width - 5 - MC.fontRendererObj.getStringWidth(s), 2, width - 2, 4 + MC.fontRendererObj.FONT_HEIGHT, Integer.MIN_VALUE);
+                MC.fontRendererObj.drawString(s, width - 3 - MC.fontRendererObj.getStringWidth(s), 4, Color.WHITE.getRGB());
+            }
+        }
+ 
+        private static void drawHealth(ScaledResolution res, EntityPlayer player)
+        {
+            MC.getTextureManager().bindTexture(emptyLife);
+            Gui.drawScaledCustomSizeModalRect(res.getScaledWidth() - 70, res.getScaledHeight() - 76, 0, 0, 64, 64, 64, 64, 64, 64);
+ 
+            int percent = (int)(player.getHealth() * 64 / player.getMaxHealth());
+            if(percent > 0)
+            {
+                MC.getTextureManager().bindTexture(fullLife);
+                Gui.drawScaledCustomSizeModalRect(res.getScaledWidth() - 70, res.getScaledHeight() - 76 + (64 - percent), 0, 64 - percent, 64, percent, 64, percent, 64, 64);
+            }
+        }
+    
+    
+   
+    
+    
+}

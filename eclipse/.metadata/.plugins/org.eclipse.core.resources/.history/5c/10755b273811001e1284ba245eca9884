@@ -1,0 +1,7 @@
+package com.chifou.bulkmod.specialblocks;
+
+import com.jcraft.jorbis.Block;
+
+public class FakeTnt extends Block {
+
+}

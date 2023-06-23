@@ -1,0 +1,10 @@
+package com.chifou.bulkmod.proxys;
+
+public class ClientProxy extends CommonProxy {
+	
+	@Override
+	public void registerRenders() {
+		
+	}
+
+}

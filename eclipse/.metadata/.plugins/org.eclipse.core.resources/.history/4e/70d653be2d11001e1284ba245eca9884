@@ -1,0 +1,17 @@
+package com.chifou.bulkmod.registries;
+
+import net.minecraft.item.Item;
+
+public class ItemsRegistries {
+	
+	private static Item explosionStick;
+	
+	public static void init() {
+		
+	}
+ 	
+	public static void register() {
+		
+	}
+
+}

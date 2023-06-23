@@ -1,0 +1,7 @@
+package com.chifou.bulkmod.specialsitems;
+
+import net.minecraft.item.Item;
+
+public class BatumStick extends Item {
+
+}

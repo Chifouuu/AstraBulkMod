@@ -1,0 +1,31 @@
+package com.chifou.bulkmod.proxys;
+
+import com.google.common.eventbus.Subscribe;
+
+import cpw.mods.fml.common.eventhandler.SubscribeEvent;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.Gui;
+import net.minecraftforge.client.event.RenderGameOverlayEvent;
+
+public class ClientProxy extends CommonProxy {
+	
+	private static Minecraft mc = Minecraft.getMinecraft();
+	
+	
+	@Override
+	public void registerRenders() {
+		
+	}
+	
+	@SubscribeEvent
+	public static void renderGameOverlayPre(RenderGameOverlayEvent.Pre event) {
+		Gui.drawRect(, 0, 0, 0, 0)
+	}
+	
+	
+	@SubscribeEvent
+	public static void renderGameOverlayPost(RenderGameOverlayEvent.Post event) {
+		
+	}
+
+}

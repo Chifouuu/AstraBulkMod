@@ -1,0 +1,24 @@
+package com.chifou.bulkmod.specialsitems;
+
+import com.chifou.bulkmod.BulkMod;
+
+import cpw.mods.fml.common.Mod.EventHandler;
+import net.minecraft.item.Item;
+import net.minecraftforge.event.entity.player.PlayerInteractEvent;
+
+public class ExplosionStick extends Item  {
+	
+	public ExplosionStick () {
+		setUnlocalizedName("explosion_stick");
+		setCreativeTab(BulkMod.bulktab);
+		setTextureName(BulkMod.MODID + ":explosion_stick");
+		this.setMaxStackSize(1);
+	}
+	
+	
+	@Override
+    public ItemStack onItemRightClick(ItemStack item, World world, EntityPlayer player) {
+        return item;
+    }
+
+}

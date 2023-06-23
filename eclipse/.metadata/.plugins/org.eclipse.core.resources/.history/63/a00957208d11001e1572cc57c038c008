@@ -1,0 +1,5 @@
+package com.chifou.bulkmod.event;
+
+public class GameOverlayHandler {
+
+}

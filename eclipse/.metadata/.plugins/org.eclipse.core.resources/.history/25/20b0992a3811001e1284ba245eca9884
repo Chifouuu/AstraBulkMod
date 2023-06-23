@@ -1,0 +1,17 @@
+package com.chifou.bulkmod.registries;
+
+import com.jcraft.jorbis.Block;
+
+public class BlockRegistries {
+	
+	public static Block fakeTnt;
+	
+	public static void init() {
+		
+	}
+	
+	public static void register () {
+		
+	}
+
+}

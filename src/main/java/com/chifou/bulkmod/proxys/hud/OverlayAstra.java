@@ -1,0 +1,44 @@
+package com.chifou.bulkmod.proxys.hud;
+
+import net.minecraft.client.gui.Gui;
+
+import java.util.Map;
+
+import org.lwjgl.opengl.GL11;
+
+import com.chifou.bulkmod.BulkMod;
+import com.chifou.bulkmod.display.DisplayHelper;
+import com.ibm.icu.util.BytesTrie.Iterator;
+
+import cpw.mods.fml.common.eventhandler.EventPriority;
+import cpw.mods.fml.common.eventhandler.SubscribeEvent;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.FontRenderer;
+import net.minecraft.client.gui.Gui;
+import net.minecraft.client.renderer.entity.RenderItem;
+import net.minecraft.init.Blocks;
+import net.minecraft.item.ItemStack;
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.client.event.RenderGameOverlayEvent;
+
+public class OverlayAstra extends Gui{
+	
+	private Minecraft mc;
+    private String show;
+    final ResourceLocation bg = new ResourceLocation(BulkMod.MODID, "textures/overlay/chestRadar.png");
+    FontRenderer fontRender;
+    RenderItem itemRenderer = new RenderItem();
+ 
+    public OverlayAstra() {
+        this.mc = Minecraft.getMinecraft();
+        this.show = "0%";
+        this.fontRender = this.mc.fontRenderer;
+    }
+ 
+    @SubscribeEvent(priority = EventPriority.NORMAL)
+    public void onRender(RenderGameOverlayEvent.Post event) {
+       
+    }
+
+}

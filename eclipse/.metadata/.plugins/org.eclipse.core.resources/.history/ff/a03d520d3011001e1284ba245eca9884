@@ -1,0 +1,15 @@
+package com.chifou.bulkmod.specialsitems;
+
+import com.chifou.bulkmod.BulkMod;
+
+import net.minecraft.item.Item;
+
+public class ExplosionStick extends Item  {
+	
+	public ExplosionStick () {
+		setUnlocalizedName("explosion_stick");
+		setCreativeTab(BulkMod.bulktab);
+		setTextureName(BulkMod.MODID + ":explosion_stick");
+	}
+
+}

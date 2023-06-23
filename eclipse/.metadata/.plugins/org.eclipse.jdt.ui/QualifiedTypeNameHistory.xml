@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="net.minecraft.client.gui.inventory.CreativeCrafting"/>
+    <fullyQualifiedTypeName name="com.chifou.bulkmod.tabs.BulkTab"/>
+    <fullyQualifiedTypeName name="net.minecraft.creativetab.CreativeTabs"/>
+    <fullyQualifiedTypeName name="cpw.mods.fml.common.event.FMLPreInitializationEvent"/>
+    <fullyQualifiedTypeName name="com.chifou.bulkmod.registries.ItemsRegistries"/>
+    <fullyQualifiedTypeName name="net.minecraft.world.Explosion"/>
+    <fullyQualifiedTypeName name="com.chifou.bulkmod.specialsitems.ExplosionStick"/>
+    <fullyQualifiedTypeName name="net.minecraftforge.event.entity.player.PlayerInteractEvent"/>
+    <fullyQualifiedTypeName name="net.minecraft.entity.player.EntityPlayer"/>
+    <fullyQualifiedTypeName name="java.util.logging.Level"/>
+    <fullyQualifiedTypeName name="net.minecraft.world.World"/>
+    <fullyQualifiedTypeName name="net.minecraft.util.ChatComponentText"/>
+    <fullyQualifiedTypeName name="net.minecraft.item.ItemCarrotOnAStick"/>
+    <fullyQualifiedTypeName name="net.minecraft.item.Item"/>
+    <fullyQualifiedTypeName name="net.minecraft.entity.player.InventoryPlayer"/>
+    <fullyQualifiedTypeName name="net.minecraft.item.ItemStack"/>
+    <fullyQualifiedTypeName name="net.minecraft.init.Blocks"/>
+    <fullyQualifiedTypeName name="net.minecraft.init.Items"/>
+    <fullyQualifiedTypeName name="net.minecraft.entity.item.EntityBoat"/>
+    <fullyQualifiedTypeName name="com.jcraft.jorbis.Block"/>
+    <fullyQualifiedTypeName name="cpw.mods.fml.common.registry.GameRegistry"/>
+    <fullyQualifiedTypeName name="javafx.scene.paint.Material"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="net.minecraftforge.client.event.RenderGameOverlayEvent.Pre"/>
+    <fullyQualifiedTypeName name="com.google.common.eventbus.Subscribe"/>
+    <fullyQualifiedTypeName name="net.minecraftforge.client.event.RenderGameOverlayEvent"/>
+    <fullyQualifiedTypeName name="net.minecraftforge.client.event.RenderGameOverlayEvent.Post"/>
+    <fullyQualifiedTypeName name="net.minecraft.client.Minecraft"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="cpw.mods.fml.common.SidedProxy"/>
+    <fullyQualifiedTypeName name="cpw.mods.fml.common.Mod.EventHandler"/>
+    <fullyQualifiedTypeName name="cpw.mods.fml.common.event.FMLPostInitializationEvent"/>
+    <fullyQualifiedTypeName name="com.chifou.bulkmod.proxys.CommonProxy"/>
+    <fullyQualifiedTypeName name="cpw.mods.fml.common.eventhandler.SubscribeEvent"/>
+    <fullyQualifiedTypeName name="net.minecraftforge.common.MinecraftForge"/>
+    <fullyQualifiedTypeName name="com.chifou.bulkmod.proxys.ClientProxy"/>
+    <fullyQualifiedTypeName name="net.minecraft.client.gui.Gui"/>
+    <fullyQualifiedTypeName name="java.lang.ref.Reference"/>
+    <fullyQualifiedTypeName name="com.chifou.bulkmod.BulkMod"/>
+    <fullyQualifiedTypeName name="com.chifou.bulkmod.display.DisplayHelper"/>
+</qualifiedTypeNameHistroy>

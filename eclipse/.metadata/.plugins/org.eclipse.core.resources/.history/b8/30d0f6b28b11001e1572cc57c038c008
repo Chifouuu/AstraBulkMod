@@ -1,0 +1,5 @@
+package com.chifou.bulkmod.proxys;
+
+public class ClientProxy {
+
+}
